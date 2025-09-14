@@ -1,0 +1,129 @@
+{
+
+  "TC1_userCanPayByNorthCoast": {
+    "_description": "Ensures that a user can complete a payment using the NorthCoast tab, and verifies that the submitted data is correctly recorded and reflected in the payment list with the expected status.",
+    "Village": "قرية سوان ليك",
+    "BuildingId": "3",
+    "selectFloorId": "ارضى",
+    "UnitId": "1",
+    "Nationality": "US",
+    "_NationalityComment": "EG or US only",
+    "PassportNationalId": "22",
+    "MobileNo": "01013586980",
+    "_MobileNoComment": "11 digits starting with 0",
+    "PayerName": "AutomationScriptUser",
+    "Amount": "2",
+    "CardNo": "5500005555555559",
+    "SecurityCode": "100",
+    "ExpiryMonth": 1,
+    "_ExpiryMonthComment": "1 or 12 only",
+    "ExpiryYear": 36,
+    "_ExpiryYearComment": "25 or 42 only"
+  },
+
+  "TC2_userCanPayByAccessKey": {
+    "_description": "Ensures that a user can complete a payment using the AccessKey tab, and verifies that the submitted data is correctly recorded and reflected in the payment list with the expected status.",
+    "AccessKey": "13502000003033",
+    "Nationality": "US",
+    "PassportNationalId": "22",
+    "MobileNo": "01013586980",
+    "PayerName": "AutomationScriptUser",
+    "Amount": "2",
+    "CardNo": "5500005555555559",
+    "SecurityCode": "100",
+    "ExpiryMonth": 1,
+    "ExpiryYear": 36
+  },
+
+  "TC3_userCanPayThroughAddressTab": {
+    "_description": "Ensures that a user can complete a payment using the Address tab, and verifies that the submitted data is correctly recorded and reflected in the payment list with the expected status.",
+    "GovernorateId": "بورسعيد",
+    "DistrictId": "شرق",
+    "SubdistrictId": "الجمرك",
+    "StreetId": "الرسوه",
+    "BuildingId": "46",
+    "selectFloorId": "ارضى",
+    "UnitId": "1",
+    "Nationality": "US",
+    "PassportNationalId": "22",
+    "MobileNo": "01013586980",
+    "PayerName": "AutomationScriptUser",
+    "Amount": "2",
+    "CardNo": "5500005555555559",
+    "SecurityCode": "100",
+    "ExpiryMonth": 1,
+    "ExpiryYear": 36
+  },
+
+  "TC4_userRestAllFieldsOnClickingClearButtonAtNorthCoastTab": {
+    "_description": "Ensures that the user can rest all the fields on NorthCoast tab by clicking on clear button.",
+    "Village": "قرية سوان ليك",
+    "BuildingId": "3",
+    "selectFloorId": "ارضى",
+    "UnitId": "1"
+  },
+
+  "TC5_userRestAllFieldsOnClickingClearButtonAtAddressTab": {
+    "_description": "Ensures that the user can rest all the fields on Address tab by clicking on clear button.",
+    "GovernorateId": "بورسعيد",
+    "DistrictId": "شرق",
+    "SubdistrictId": "الجمرك",
+    "StreetId": "الرسوه",
+    "BuildingId": "46",
+    "selectFloorId": "ارضى",
+    "UnitId": "1"
+  },
+
+  "TC6_userCanSearchForSpecificUnitId": {
+    "_description": "Ensures that the user can search using a specific unitId and all the result will have the same Id.",
+    "AccessKey": "13502000003033"
+  },
+
+  "TC7_userCanSelectPaymentAndPayForTheSameUnit": {
+    "_description": "This testcase aims to ensure that the user can specifically select a record from the first page, verify that the FinalPaymentPage opens with the correct unitId appeared in the list when clicking on the 'PayForSameUnitButton' button', and checks the record is created and successfully added to the list with the submitted data and the expected status.",
+    "selectedRowNo": "2",
+    "actionButton": "detailsButton", "_actionButtonComment": "detailsButton or receiptButton only",
+    "PayerName": "AutomationScriptUser",
+    "Amount": "2",
+    "CardNo": "5500005555555559",
+    "SecurityCode": "100",
+    "ExpiryMonth": 1,
+    "ExpiryYear": 36
+  },
+
+  "TC8_userCanSelectPaymentAndDownloadPDF": {
+    "_description": "Ensures that the user can specifically select a record from the first page, verify that the PrintPage opens with the correct unitId, and confirm that two PDF files are downloaded to the selected directory after being cleared with the expected filenames.",
+    "selectedRowNo": "1",
+    "actionButton": "receiptButton"
+  },
+
+  "TC9_userEntersWrongDataAtNorthCoastTab": {
+    "_description": "Ensures that when a user enters incorrect data in the NorthCoast tab, System prevents payment submission and displays an appropriate error message.",
+    "Village": "قرية سوان ليك",
+    "BuildingId": "2",
+    "selectFloorId": "ارضى",
+    "UnitId": "1"
+  },
+
+  "TC10_userEntersWrongDataAtAccessKeyTab": {
+    "_description": "Ensures that when a user enters incorrect data in the AccessKey tab, System prevents payment submission and displays an appropriate error message.",
+    "AccessKey": "1350200000303"
+  },
+
+  "TC11_userEntersWrongDataAtAddressTab": {
+    "_description": "Ensures that when a user enters incorrect data in the Address tab, System prevents payment submission and displays an appropriate error message.",
+    "GovernorateId": "السويس",
+    "DistrictId": "الأربعين",
+    "SubdistrictId": "قسم سادس ثانى-سياحى",
+    "StreetId": "لافيستا7",
+    "BuildingId": "136D",
+    "selectFloorId": "الاول",
+    "UnitId": "136D"
+  },
+
+  "TC12_userCanSearchWithWrongUnitIdInSearchBar": {
+    "_description": "Ensures that when user search using a wrong unitId no records shown in the table.",
+    "AccessKey": "test"
+  }
+
+}
