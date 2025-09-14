@@ -25,6 +25,12 @@ public class BasePage {
         }
         catch (Exception e){
             log.error("The Loading screen hasn't been removed, it keeps loading.");
+            log.error("The Loading screen hasn't been removed, it keeps loading.");
+
+            log.error("The Loading screen hasn't been removed, it keeps loading.");
+
+            log.error("The Loading screen hasn't been removed, it keeps loading.");
+
             throw e;
         }
     }

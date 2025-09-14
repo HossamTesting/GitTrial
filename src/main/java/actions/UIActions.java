@@ -63,6 +63,12 @@ public class UIActions {
         this.actions = new Actions(driver);
         js = (JavascriptExecutor) driver;
         log.info("UIActions initialized with wait duration: '{}' seconds", waitDuration);
+        log.info("UIActions initialized with wait duration: '{}' seconds", waitDuration);
+
+        log.info("UIActions initialized with wait duration: '{}' seconds", waitDuration);
+
+        log.info("UIActions initialized with wait duration: '{}' seconds", waitDuration);
+
     }
 
     /**
